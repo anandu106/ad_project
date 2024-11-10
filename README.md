@@ -33,3 +33,20 @@ Download Windows Server 2022 from <a href="https://www.microsoft.com/en-us/evalc
 ### Ubuntu Server
 Download Ubuntu Server file from <a href="https://ubuntu.com/download/server">here.</a>
 
+### In VMware
+ 
+Click New Virtual Machine.
+
+Select Typical.  
+
+Select Installer Disc Image file and add the downloaded Windows 10 iso file. 
+
+Select Microsoft Windows as Guest Operating System.
+
+Name the Virtual Machine and select the location to store the VM files. 
+
+Allocate 50GB size and select Split virtual disk into multiple files.
+
+Open the created VM and start Installing Windows.   
+
+Follow the similar steps for creating Kali Linux, Ubuntu Server and Windows Server VMs.
