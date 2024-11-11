@@ -150,8 +150,15 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 
 #### Add Users on Active Directory
 - Click on "Active Directory Users and Computers"
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/ad_3.png" width="500">
+  
 - Right click on the domain and select "Organizational Unit"
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/ad_4.png" width="500">
+
+
 - Create new User in the newly created OU.
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/ad_6.png" width="500"> 
+
 - Go to the Windows 10 VM. Click on Advanced system settings.
 - Type the domain name and click OK.
 - Change the preferred DNS server for the Windows 10 VM to 192.168.10.7 and reboot.
