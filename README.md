@@ -13,8 +13,9 @@ All system/software required for this project will be installed on VMware Workst
 
 ## Logical Diagram
 
-## Installing Windows 10, Windows Server, Ubuntu Server and Kali Linux on to Vmware
-### Windows 10
+## Steps
+### Installing Windows 10, Windows Server, Ubuntu Server and Kali Linux on to Vmware
+#### Windows 10
 - Go to the Windows 10 download page <a href="https://www.microsoft.com/en-ca/software-download/windows10">here.</a>
 
 - Click Download Tool Now
@@ -22,15 +23,15 @@ All system/software required for this project will be installed on VMware Workst
 - In Setup, select Create Installation Media, customize options and then select ISO file. 
 
 
-### Kali Linux
+#### Kali Linux
 - Download Kali Linux VMware image from <a href="https://www.kali.org/get-kali/#kali-virtual-machines">here.</a>
 
 
-### Windows Server
+#### Windows Server
 - Download Windows Server 2022 from <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022">here.</a>
 
 
-### Ubuntu Server
+#### Ubuntu Server
 - Download Ubuntu Server file from <a href="https://ubuntu.com/download/server">here.</a>
 
 
@@ -52,9 +53,20 @@ All system/software required for this project will be installed on VMware Workst
 
 - Follow the similar steps for creating Kali Linux, Ubuntu Server and Windows Server VMs.
 
+### Change IP address of the Ubuntu Server
+- Type "sudo nano /etc/netplan/50-cloud-init.yaml"
+- Edit the file exactly how it is shown below.
+IMAGE
+- Save the file and type "sudo netplan apply"
+- Type "ip a" and "ping google.com" to test connectivity. 
 
+
+### Change name and IP address of the Windows 10 VM
+- Rename the VM to target-PC.
+- Change IP address. 
+- Follow the similar steps for the Windows Server.
+  
 ### Install Splunk Instance on the Ubuntu Server
-
 - Download Splunk Enterprise from here on your host machine. 
 - Got to the Ubuntu Server settings in VMware and add a shared folder.
 - The path of the folder should be where the Splunk installation file is downloaded on the host machine.
@@ -70,21 +82,13 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - Type "exit" -> "cd bin" -> "sudo ./splunk enable boot-start -user splunk" to boot-up splunk everytime the system reboots.  
 
 
-Change IP address of the Ubuntu Server
-- Type "sudo nano /etc/netplan/50-cloud-init.yaml"
-- Edit the file exactly how it is shown below.
-IMAGE
-- Save the file and type "sudo netplan apply"
-- Type "ip a" and "ping google.com" to test connectivity. 
-
-
-Change name and IP address of the Windows 10 VM
-- Rename the VM to target-PC.
-- Change IP address. 
-
-
-Download Splunk Universal Forwarder for Windows 10 and Windows Server
+### Download Splunk Universal Forwarder for Windows 10 and Windows Server
 - Go to the Windows VM and go <a href="https://www.splunk.com/en_us/download/universal-forwarder.html">here</a> to download Splunk Universal Forwarder.
-
+- Click the downloaded file and start the setup.
+- Select "An on-premises Splunk Enterprise instance.
+- Choose a username and select "Generate random password"
+- Skip Deployment Server option. Add the IP of the Splunk server i.e 192.168.10.10 for the receiving indexer. The port is 9997.
+- And install.
+- Follow these same steps for the Windows Server.    
 
 
