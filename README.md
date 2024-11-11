@@ -160,13 +160,23 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 <img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/ad_6.png" width="500"> 
 
 - Go to the Windows 10 VM. Click on Advanced system settings.
+<img src="https://github.com/anandu106/ad_project/blob/e70bf8e19ae8514b2c856d7376dd93d6fb2ed129/Images/Screenshot%202024-11-11%20193948.png" width="500">
+
 - Type the domain name and click OK.
+<img src="https://github.com/anandu106/ad_project/blob/e70bf8e19ae8514b2c856d7376dd93d6fb2ed129/Images/rename_win10_1.png" width="500">
+
 - Change the preferred DNS server for the Windows 10 VM to 192.168.10.7 and reboot.
 
 ### Generate Telemetry
 - Enable RDP on the Windows target machine.
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/rdp" width="500">
+  
 - Under "Enter the object names to select", type the users created.
-IMAGE
-- Install crowbar on the Kali machine using sudo apt-get install -y crowbar
+
+- Install crowbar on the Kali machine using "sudo apt-get install -y crowbar"
 - For this project to work add the user passwords to the rockyou.txt file in /usr/share/wordlists/
-- 
+- Run crowbar like how shown below
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/crowbar_kali" width="500">
+- Go to Splunk and see the telemetry
+  
+   
