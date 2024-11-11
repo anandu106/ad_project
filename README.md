@@ -77,9 +77,15 @@ All system/software required for this project will be installed on VMware Workst
 - Download Splunk Enterprise from <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html">here</a> on your host machine. 
 - Got to the Ubuntu Server settings in VMware and add a shared folder.
 - The path of the folder should be where the Splunk installation file is downloaded on the host machine.
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/Screenshot%202024-11-10%20214854.png" width="500">
+
 - Go to the Ubuntu Server and type the following command:
 sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
+
 - If done correctly you should see the following output.
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/Screenshot%202024-11-10%20214925.png" width="500">
+
+
 - Type "sudo dpkg -i {the name of the downloaded splunk file}" to install.
 - After completion go to the directory /opt/splunk
 - Type "sudo -u splunk bash" to change to user splunk.
@@ -96,6 +102,15 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - Choose a username and select "Generate random password"
 - Skip Deployment Server option. Add the IP of the Splunk server i.e 192.168.10.10 for the receiving indexer. The port is 9997.
 - And install.
+- Go to the following directory and create a file called inputs.conf
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/win10_splunk.png" width="500">
+
+- Add the following information and save.
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/inputs_conf.png" width="500">
+ 
+- Go to Services. Select SplunkForwarder and select "Local System Account". Restart the service.
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/win10_splunk_1.png" width="500">
+
 - Follow these same steps for the Windows Server.
 
  ### Download Sysmon for Windows 10 and Windows Server
@@ -106,10 +121,6 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
  - Run Powershell as administrator.
  - Change directory to the copied file path.
  - Type ".\Sysmon64 -i ..\sysmonconfig.xml. And install.
- - Go to the following directory and create a file called inputs.conf
- - Add the following information and save.
- - Go to Services. Select SplunkForwarder and select "Local System Account". Restart the service.
-
 
 ### Add Index on Splunk and Enable Forwarding and Receiving
 - Go to 192.168.10.10:8000 on your browser and login with the credentials created when installing the Splunk server.
