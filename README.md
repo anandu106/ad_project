@@ -136,10 +136,14 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 
 ### Configure Active Directory
 - Go to the Windows Server VM and click "Add Roles and Features"
+<img src="https://github.com/anandu106/ad_project/blob/b59fad805b5cf0435360701ec165416e6a4e378e/Images/ad_1.png" width="500">
+
 - Select "Role-based or feature-based installation"
 - Select the ADDC01 server.
 - Select Active Directory Domain Services. And install.
 - Click "Promote this server to a domain controller"
+<img src="https://github.com/anandu106/ad_project/blob/b59fad805b5cf0435360701ec165416e6a4e378e/Images/ad_2.png" width="500">
+  
 - Select "Add a new forest"
 - For domain name, it must have a top level domain. Example: mylab.local
 - Leave the rest of the settings as default. And install.
