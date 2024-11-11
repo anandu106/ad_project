@@ -103,8 +103,19 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
  - Add the following information and save.
  - Go to Services. Select SplunkForwarder and select "Local System Account". Restart the service.
 
+### Configure Active Directory
+- Go to the Windows Server VM and click "Add Roles and Features"
+- Select "Role-based or feature-based installation"
+- Select the ADDC01 server.
+- Select Active Directory Domain Services. And install.
+   
+
 ### Add Index on Splunk and Enable Forwarding and Receiving
 - Go to 192.168.10.10:8000 on your browser and login with the credentials created when installing the Splunk server.
 - Create a new index called endpoint.
 - Click "Configure receiving"
-- Click "New Receiving Port". Provide the port number 9997 and save. 
+- Click "New Receiving Port". Provide the port number 9997 and save.
+- Click "Promote this server to a domain controller"
+- Select "Add a new forest"
+- For domain name, it must have a top level domain. Example: mylab.local
+- Leave the rest of the settings as default. And install. 
