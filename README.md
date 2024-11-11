@@ -12,7 +12,7 @@ All system/software required for this project will be installed on VMware Workst
 - The documentation to install Vmware Workstation is provided <a href="https://knowledge.broadcom.com/external/article/344595/downloading-and-installing-vmware-workst.html">here.</a>
 
 ## Logical Diagram
-<img src="https://github.com/anandu106/ad_project/blob/abafa29a4f5920e878e678aeea43647f22a20ee9/Images/logical_diagram.png" width="100">
+<img src="https://github.com/anandu106/ad_project/blob/abafa29a4f5920e878e678aeea43647f22a20ee9/Images/logical_diagram.png" width="300">
 
 ## Steps
 ### Installing Windows 10, Windows Server, Ubuntu Server and Kali Linux on to Vmware
