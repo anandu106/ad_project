@@ -65,11 +65,11 @@ All system/software required for this project will be installed on VMware Workst
 
 ### Change name and IP address of the Windows 10 VM
 - Rename the VM to target-PC.
-<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/rename_win10.png" width="1000">
+<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/rename_win10.png" width="500">
 
 - Change IP address.
-<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/win10_ip.png" width="1000">
-<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/win10_ip_1.png" width="1000">
+<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/win10_ip.png" width="500">
+<img src="https://github.com/anandu106/ad_project/blob/2b857b99d46dbacd57e0cc3d2295d63a111f34a8/Images/win10_ip_1.png" width="500">
    
 - Follow the similar steps for the Windows Server. Name the server to ADDC01. Change IP to 192.168.10.7 and reboot. 
   
