@@ -55,7 +55,36 @@ All system/software required for this project will be installed on VMware Workst
 
 ### Install Splunk Instance on the Ubuntu Server
 
-Download Splunk Enterprise from here on your host machine. 
+- Download Splunk Enterprise from here on your host machine. 
+- Got to the Ubuntu Server settings in VMware and add a shared folder.
+- The path of the folder should be where the Splunk installation file is downloaded on the host machine.
+- Go to the Ubuntu Server and type the following command:
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
+- If done correctly you should see the following output.
+- Type "sudo dpkg -i {the name of the downloaded splunk file}" to install.
+- After completion go to the directory /opt/splunk
+- Type "sudo -u splunk bash" to change to user splunk.
+- Type "cd /bin"
+- Type "./splunk start" to start installer.
+- Choose a username and password when prompted.
+- Type "exit" -> "cd bin" -> "sudo ./splunk enable boot-start -user splunk" to boot-up splunk everytime the system reboots.  
 
-Download Sysmon for Windows 10 and Windows Server
+
+Change IP address of the Ubuntu Server
+- Type "sudo nano /etc/netplan/50-cloud-init.yaml"
+- Edit the file exactly how it is shown below.
+IMAGE
+- Save the file and type "sudo netplan apply"
+- Type "ip a" and "ping google.com" to test connectivity. 
+
+
+Change name and IP address of the Windows 10 VM
+- Rename the VM to target-PC.
+- Change IP address. 
+
+
+Download Splunk Universal Forwarder for Windows 10 and Windows Server
+- Go to the Windows VM and go <a href="https://www.splunk.com/en_us/download/universal-forwarder.html">here</a> to download Splunk Universal Forwarder.
+
+
 
