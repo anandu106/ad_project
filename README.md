@@ -125,7 +125,11 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 ### Add Index on Splunk and Enable Forwarding and Receiving
 - Go to 192.168.10.10:8000 on your browser and login with the credentials created when installing the Splunk server.
 - Create a new index called endpoint.
+<img src="https://github.com/anandu106/ad_project/blob/a043e4e8c673c961b0f235150f0d3c2f91f59e8f/Images/splunk_index.png" width="500">
+
 - Click "Configure receiving"
+<img src="https://github.com/anandu106/ad_project/blob/a043e4e8c673c961b0f235150f0d3c2f91f59e8f/Images/splunk_forwarding.png" width="500">
+ 
 - Click "New Receiving Port". Provide the port number 9997 and save.
 
 
