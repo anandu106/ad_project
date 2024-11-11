@@ -64,7 +64,7 @@ IMAGE
 ### Change name and IP address of the Windows 10 VM
 - Rename the VM to target-PC.
 - Change IP address. 
-- Follow the similar steps for the Windows Server.
+- Follow the similar steps for the Windows Server. Name the server to ADDC01 and reboot. 
   
 ### Install Splunk Instance on the Ubuntu Server
 - Download Splunk Enterprise from here on your host machine. 
@@ -102,3 +102,9 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
  - Go to the following directory and create a file called inputs.conf
  - Add the following information and save.
  - Go to Services. Select SplunkForwarder and select "Local System Account". Restart the service.
+
+### Add Index on Splunk and Enable Forwarding and Receiving
+- Go to 192.168.10.10:8000 on your browser and login with the credentials created when installing the Splunk server.
+- Create a new index called endpoint.
+- Click "Configure receiving"
+- Click "New Receiving Port". Provide the port number 9997 and save. 
