@@ -64,7 +64,7 @@ IMAGE
 ### Change name and IP address of the Windows 10 VM
 - Rename the VM to target-PC.
 - Change IP address. 
-- Follow the similar steps for the Windows Server. Name the server to ADDC01 and reboot. 
+- Follow the similar steps for the Windows Server. Name the server to ADDC01. Change IP to 192.168.10.7 and reboot. 
   
 ### Install Splunk Instance on the Ubuntu Server
 - Download Splunk Enterprise from here on your host machine. 
