@@ -74,7 +74,7 @@ All system/software required for this project will be installed on VMware Workst
 - Follow the similar steps for the Windows Server. Name the server to ADDC01. Change IP to 192.168.10.7 and reboot. 
   
 ### Install Splunk Instance on the Ubuntu Server
-- Download Splunk Enterprise from here on your host machine. 
+- Download Splunk Enterprise from <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html">here</a> on your host machine. 
 - Got to the Ubuntu Server settings in VMware and add a shared folder.
 - The path of the folder should be where the Splunk installation file is downloaded on the host machine.
 - Go to the Ubuntu Server and type the following command:
