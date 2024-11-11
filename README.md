@@ -89,6 +89,16 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - Choose a username and select "Generate random password"
 - Skip Deployment Server option. Add the IP of the Splunk server i.e 192.168.10.10 for the receiving indexer. The port is 9997.
 - And install.
-- Follow these same steps for the Windows Server.    
+- Follow these same steps for the Windows Server.
 
-
+ ### Download Sysmon for Windows 10 and Windows Server
+ - Download Sysmon from <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon">here.</a>
+ - Go <a href="https://github.com/olafhartong/sysmon-modular">here</a> to get the Sysmon configuration
+ - Go to sysmonconfig.xml and click on Raw. Save it as a XML document.
+ - Extract the Sysmon folder and copy the folder path.
+ - Run Powershell as administrator.
+ - Change directory to the copied file path.
+ - Type ".\Sysmon64 -i ..\sysmonconfig.xml. And install.
+ - Go to the following directory and create a file called inputs.conf
+ - Add the following information and save.
+ - Go to Services. Select SplunkForwarder and select "Local System Account". Restart the service.
