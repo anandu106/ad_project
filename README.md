@@ -177,6 +177,8 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - For this project to work add the user passwords to the rockyou.txt file in /usr/share/wordlists/
 - Run crowbar like how shown below
 <img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/crowbar_kali.png" width="500">
+
 - Go to Splunk and see the telemetry
-  
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/splunk_telemetry.png" width="500">
+<img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/splunk_telemetry_1.png" width="500">
    
