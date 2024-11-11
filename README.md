@@ -58,9 +58,10 @@ All system/software required for this project will be installed on VMware Workst
 - Type "sudo nano /etc/netplan/50-cloud-init.yaml"
 - Edit the file exactly how it is shown below.
 <img src="https://github.com/anandu106/ad_project/blob/2f9a0c4817423dfa04b887b45aa350a2a66ccdfb/Images/ubuntu_ip.png" width="1000">
+
 - Save the file and type "sudo netplan apply"
 - Type "ip a" and "ping google.com" to test connectivity. 
-
+<img src="https://github.com/anandu106/ad_project/blob/75155166fad37267abdf932523f4bd5293184f05/Images/ubuntu_ip_1.png" width="1000">
 
 ### Change name and IP address of the Windows 10 VM
 - Rename the VM to target-PC.
