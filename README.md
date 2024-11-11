@@ -126,5 +126,13 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - Right click on the domain and select "Organizational Unit"
 - Create new User in the newly created OU.
 - Go to the Windows 10 VM. Click on Advanced system settings.
-- Type the domain name and click OK
+- Type the domain name and click OK.
 - Change the preferred DNS server for the Windows 10 VM to 192.168.10.7 and reboot.
+
+### Generate Telemetry
+- Enable RDP on the Windows target machine.
+- Under "Enter the object names to select", type the users created.
+IMAGE
+- Install crowbar on the Kali machine using sudo apt-get install -y crowbar
+- For this project to work add the user passwords to the rockyou.txt file in /usr/share/wordlists/
+- 
