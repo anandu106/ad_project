@@ -121,6 +121,7 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
  - Run Powershell as administrator.
  - Change directory to the copied file path.
  - Type ".\Sysmon64 -i ..\sysmonconfig.xml. And install.
+ - Follow these same steps for the Windows Server.
 
 ### Add Index on Splunk and Enable Forwarding and Receiving
 - Go to 192.168.10.10:8000 on your browser and login with the credentials created when installing the Splunk server.
