@@ -178,6 +178,7 @@ sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 - Run crowbar like how shown below
 <img src="https://github.com/anandu106/ad_project/blob/d623d54f72f1d6fdecac5b2d1bf7fe87c20765ef/Images/crowbar_kali.png" width="500">
 
+- -u - username, -C - wordlist, -s - The IP address of the target machine. /32 subnet mask denotes that the target is one specific machine in the subnet.  
 - Go to Splunk and see the events created from the target-PC
 <img src="https://github.com/anandu106/ad_project/blob/67f32cab7ea4f0ba8de013ec5e6b82b7831f6704/Images/splunk_telemetry.png" width="500">
 <img src="https://github.com/anandu106/ad_project/blob/67f32cab7ea4f0ba8de013ec5e6b82b7831f6704/Images/splunk_telemetry_1.png" width="500">
