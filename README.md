@@ -83,7 +83,7 @@ All system/software required for this project will be installed on VMware Workst
 sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
 
 - If done correctly you should see the following output.
-<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/Screenshot%202024-11-10%20214925.png" width="500">
+<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/splunk_file.png" width="500">
 
 
 - Type "sudo dpkg -i {the name of the downloaded splunk file}" to install.
