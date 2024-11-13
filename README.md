@@ -39,20 +39,14 @@ All system/software required for this project will be installed on VMware Workst
 ### In VMware
  
 - Click New Virtual Machine.
-
 - Select Typical.  
-
 - Select Installer Disc Image file and add the downloaded Windows 10 iso file. 
-
 - Select Microsoft Windows as Guest Operating System.
-
 - Name the Virtual Machine and select the location to store the VM files. 
-
 - Allocate 50GB size and select Split virtual disk into multiple files.
- 
 - Open the created VM and start Installing Windows.   
-
 - Follow the similar steps for creating Kali Linux, Ubuntu Server and Windows Server VMs.
+- IMPORTANT - Make sure NAT is selected as the network connection for all the VMs. 
 
 ### Change IP address of the Ubuntu Server
 - Type "sudo nano /etc/netplan/50-cloud-init.yaml"
