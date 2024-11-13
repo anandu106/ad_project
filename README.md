@@ -73,7 +73,7 @@ All system/software required for this project will be installed on VMware Workst
 - Download Splunk Enterprise from <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html">here</a> on your host machine. 
 - Got to the Ubuntu Server settings in VMware and add a shared folder.
 - The path of the folder should be where the Splunk installation file is downloaded on the host machine.
-<img src="https://github.com/anandu106/ad_project/blob/72eb54a75a7d3382ef9df3e70a2f7d64979dc1d8/Images/Screenshot%202024-11-10%20214854.png" width="500">
+<img src="https://github.com/anandu106/ad_project/blob/3d9ec3425c491b705e505072681f315bccab2805/Images/VMshare.png" width="500">
 
 - Go to the Ubuntu Server and type the following command:
 sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other -o uid=1000
