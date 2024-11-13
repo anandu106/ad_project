@@ -48,6 +48,8 @@ All system/software required for this project will be installed on VMware Workst
 - Follow the similar steps for creating Kali Linux, Ubuntu Server and Windows Server VMs.
 - IMPORTANT - Make sure NAT is selected as the network connection for all the VMs. 
 
+<img src="https://github.com/anandu106/ad_project/blob/d59a1d8576f79f5bf478f4e272849a13db094966/Images/NAT.png" width="500">
+
 ### Change IP address of the Ubuntu Server
 - Type "sudo nano /etc/netplan/50-cloud-init.yaml"
 - Edit the file exactly how it is shown below.
